@@ -1,4 +1,3 @@
-Java
 public class Carro {
     private String marca;
     private double precio;

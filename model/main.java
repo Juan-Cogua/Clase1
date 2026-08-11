@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class main {
     public static void main(String[] args) {
         ArrayList<Persona> personas = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         int opcion = 0;
 
         do {
-            System.out.println("\n=== MENÚ PRINCIPAL ===");
+            System.out.println("\nMENÚ PRINCIPAL");
             System.out.println("1. Agregar persona con carro");
             System.out.println("2. Mostrar todas las personas con su carro");
             System.out.println("3. Salir");
@@ -16,7 +16,7 @@ public class Main {
 
             if (scanner.hasNextInt()) {
                 opcion = scanner.nextInt();
-                scanner.nextLine()
+                scanner.nextLine();
             } else {
                 System.out.println("Por favor, ingrese un número válido.");
                 scanner.nextLine();
@@ -25,7 +25,7 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("\n--- Datos de la Persona ---");
+                    System.out.println("\nDatos de la Persona");
                     System.out.print("Nombre: ");
                     String nombre = scanner.nextLine();
 
@@ -33,7 +33,7 @@ public class Main {
                     int edad = scanner.nextInt();
                     scanner.nextLine();
 
-                    System.out.println("\n--- Datos del Carro ---");
+                    System.out.println("\nDatos del Carro");
                     System.out.print("Marca del carro: ");
                     String marca = scanner.nextLine();
 
@@ -45,11 +45,11 @@ public class Main {
                     Persona persona = new Persona(nombre, edad, carro);
                     personas.add(persona);
 
-                    System.out.println("\n¡Persona y carro registrados exitosamente!");
+                    System.out.println("\n¡Registrados exitosamente!");
                     break;
 
                 case 2:
-                    System.out.println("\n--- LISTA DE PERSONAS Y CARROS ---");
+                    System.out.println("\nLISTA DE PERSONAS Y CARROS");
                     if (personas.isEmpty()) {
                         System.out.println("No hay registros disponibles.");
                     } else {

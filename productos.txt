@@ -1,0 +1,5 @@
+P001;Teclado;85000
+P001;Teclado;85000
+P001;Teclado;85000
+P001;Teclado;85000
+juan;2;4553
