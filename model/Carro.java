@@ -4,6 +4,7 @@ public class Carro {
     private double precio;
 
     public Carro(String marca, double precio) {
+        this.marca = marca;
         this.precio = precio;
     }
 
