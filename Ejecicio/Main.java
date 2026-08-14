@@ -10,6 +10,6 @@ public class Main {
         ProductoLoader loader = new ProductoLoader("productos.txt");
         ProductoController controller = new ProductoController(vista, loader);
 
-        controller.registrarProducto();
+        controller.iniciar();
     }
 }
