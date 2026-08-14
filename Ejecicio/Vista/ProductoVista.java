@@ -1,4 +1,4 @@
-package Ejecicio;
+package Ejecicio.Vista;
 
 import javax.swing.JOptionPane;
 

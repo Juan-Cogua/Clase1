@@ -1,6 +1,10 @@
-package Ejecicio;
+package Ejecicio.Cotroller;
 
 import java.io.IOException;
+
+import Ejecicio.Loader.ProductoLoader;
+import Ejecicio.Vista.ProductoVista;
+import Ejecicio.model.Producto;
 
 public class ProductoController {
     private final ProductoVista vista;

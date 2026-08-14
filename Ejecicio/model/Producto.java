@@ -1,4 +1,4 @@
-package Ejecicio;
+package Ejecicio.model;
 
 public class Producto {
     private String codigo;

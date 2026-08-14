@@ -1,8 +1,12 @@
-package Ejecicio;
+package Ejecicio.Loader;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
+
+import Ejecicio.model.Producto;
+
+
 
 public class ProductoLoader {
     private final String rutaArchivo;
