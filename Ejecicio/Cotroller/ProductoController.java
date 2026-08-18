@@ -39,8 +39,8 @@ public class ProductoController {
 
 
     public void registrarProducto() {
-        List <Producto> ListaTemporal = new ArrayList<>();
-        boolean AgregarMas;
+        List<Producto> listaTemporal = new ArrayList<>();
+        boolean agregarMas = false;
         do {
         try {
             String codigo = vista.pedirDato("Ingrese el código del producto:");
@@ -58,11 +58,11 @@ public class ProductoController {
 
             loader.guardar(producto);
 
-            ListaTemporal.add(producto);
+            listaTemporal.add(producto);
         
             vista.mostrarMensaje("¡Producto guardado exitosamente!");
 
-            AgregarMas = vista.confirmar("¿Desea agregar otro producto?");
+            agregarMas = vista.confirmar("¿Desea agregar otro producto?");
 
         } catch (NumberFormatException e) {
             vista.mostrarError("El precio ingresado no es un número válido.");
@@ -72,9 +72,9 @@ public class ProductoController {
             vista.mostrarError("Error al guardar en el archivo: " + e.getMessage());
         }
 
-    } while (AgregarMas);
-    if (!ListaTemporal.isEmpty()) {
-    vista.mostrarMensaje("Se guardaron " + ListaTemporal.size() + " producto(s) en esta sesión.");
+    } while (agregarMas);
+    if (!listaTemporal.isEmpty()) {
+    vista.mostrarMensaje("Se guardaron " + listaTemporal.size() + " producto(s) en esta sesión.");
     }
 }
 
